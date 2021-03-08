@@ -1,0 +1,124 @@
+
+*{
+  box-sizing: border-box;
+}
+body {
+  background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  color: white;
+  
+  font-family: "poppins",sans-serif;
+}
+.root{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  
+  background-color: rgb(15,15,15);
+  padding: 1rem;
+  width: 100%;
+ 
+}
+.heading-tag{
+  float: left;
+  padding: 0.5rem 1.5rem;
+  margin-top: -9px;
+  background-color: rgb(241, 183, 22);
+  border: 3px solid black;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+.search:focus{
+  outline: 0;
+}
+
+.search{
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  color:rgb(116, 129, 40);
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.3rem;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: auto ;
+  margin-left: 490px;
+  margin-top: 20px;
+}
+
+.btn{
+ margin-left: 790px;
+  margin-top: -70px;
+}
+.movie-container
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie{
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  margin:1rem;
+  width:300px;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 450px;
+  max-width: 100%;
+}
+
+.movie-info{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie-info h3{
+  margin:0;
+}
+
+.movie-over{
+  background-color: #fff;
+  position: absolute;
+  color:#22254b;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translate(102%);
+  transition: transform 0.3s ease-in-out ;
+}
+
+.movie:hover .movie-over {
+  transform: translate(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  padding: 0.5rem;
+
+}
+.tag.green{
+  color:green;
+}
+.tag.orange{
+  color:orange;
+}
+.tag.red{
+  color:red;
+}
